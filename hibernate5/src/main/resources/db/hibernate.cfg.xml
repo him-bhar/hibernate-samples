@@ -4,19 +4,24 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<property name="connection.url">jdbc:mysql://localhost:3306/telephone_dir</property>
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/telephone_dir</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
-		<property name="connection.username">root</property>
-		<property name="connection.password">root</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
 		<!-- DB schema will be updated if needed -->
-		<property name="hbm2ddl.auto">update</property>
-		<property name="show_sql">false</property>
-		<property name="format_sql">false</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.show_sql">false</property>
+		<property name="hibernate.format_sql">false</property>
+<!-- 		<property name="hibernate.current_session_context_class">thread</property>  -->
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+		
+<!-- 		<mapping package="com.himanshu.telephonedir.hibernate.domain" /> -->
 
-<!-- 		<mapping class="com.blogspot.aknowakowski.Task"></mapping> -->
+		<mapping class="com.himanshu.telephonedir.hibernate.domain.Person"></mapping>
+		<mapping class="com.himanshu.telephonedir.hibernate.domain.PhoneDetails"></mapping>
 
 	</session-factory>
 </hibernate-configuration>
