@@ -18,6 +18,7 @@ public class SessionFactory {
     } else {
       final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
           .configure("db/hibernate.cfg.xml") // configures settings from hibernate.cfg.xml
+          .loadProperties("db/db.properties")
           .build();
         sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
     }

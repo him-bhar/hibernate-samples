@@ -14,6 +14,7 @@ public class Main {
   private static Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
   public static void main(String[] args) {
+    SessionFactory.getSessionFactory();
     Main m = new Main();
     LOGGER.info("Started main. SessionFactory silently initialized in background.");
     int choice = -1;
