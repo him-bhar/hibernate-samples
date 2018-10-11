@@ -1,4 +1,4 @@
-package com.himanshu.telephonedir.hibernate.dao;
+package com.himanshu.telephonedir.hibernate5.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 
-import com.himanshu.telephonedir.hibernate.domain.Person;
+import com.himanshu.telephonedir.hibernate5.domain.Person;
 import com.himanshu.telephonedir.hibernate5.factory.SessionFactory;
 
 public class PersonDao {

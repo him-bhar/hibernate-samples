@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `person` (
 -- Data exporting was unselected.
 
 -- Dumping structure for table telephone_dir.phone_details
-CREATE TABLE IF NOT EXISTS phone_details (
+CREATE TABLE IF NOT EXISTS `phone_details` (
   id int NOT NULL PRIMARY KEY,
   phone_num varchar(50) NOT NULL,
   num_type varchar(100) NOT NULL,
@@ -23,7 +23,7 @@ ALTER TABLE phone_details ADD FOREIGN KEY ( person_id ) REFERENCES person (id) ;
 
 
 -- Dumping structure for table telephone_dir.sequence_table
-CREATE TABLE IF NOT EXISTS sequence_table (
+CREATE TABLE IF NOT EXISTS SEQUENCE_TABLE (
   sequence_name varchar(255) NOT NULL PRIMARY KEY,
   next_val int DEFAULT NULL
 );

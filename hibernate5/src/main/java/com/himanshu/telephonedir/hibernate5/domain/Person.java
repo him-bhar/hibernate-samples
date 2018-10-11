@@ -1,4 +1,4 @@
-package com.himanshu.telephonedir.hibernate.domain;
+package com.himanshu.telephonedir.hibernate5.domain;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -108,4 +108,13 @@ public class Person {
     this.lastName = lastName;
   }
 
+  @Override
+  public String toString() {
+    return "Person{" +
+            "id=" + id +
+            ", firstName='" + firstName + '\'' +
+            ", lastName='" + lastName + '\'' +
+            ", phoneDetails=" + phoneDetails +
+            '}';
+  }
 }

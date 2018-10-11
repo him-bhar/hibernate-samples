@@ -6,9 +6,9 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.himanshu.telephonedir.hibernate.dao.PersonDao;
-import com.himanshu.telephonedir.hibernate.domain.Person;
-import com.himanshu.telephonedir.hibernate.domain.PhoneDetails;
+import com.himanshu.telephonedir.hibernate5.dao.PersonDao;
+import com.himanshu.telephonedir.hibernate5.domain.Person;
+import com.himanshu.telephonedir.hibernate5.domain.PhoneDetails;
 
 public class Main {
   private static Logger LOGGER = LoggerFactory.getLogger(Main.class);

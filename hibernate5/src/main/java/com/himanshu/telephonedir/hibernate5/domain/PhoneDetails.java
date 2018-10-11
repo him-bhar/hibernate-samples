@@ -1,4 +1,4 @@
-package com.himanshu.telephonedir.hibernate.domain;
+package com.himanshu.telephonedir.hibernate5.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

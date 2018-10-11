@@ -13,8 +13,8 @@
 		
 <!-- 		<mapping package="com.himanshu.telephonedir.hibernate.domain" /> -->
 
-		<mapping class="com.himanshu.telephonedir.hibernate.domain.Person"></mapping>
-		<mapping class="com.himanshu.telephonedir.hibernate.domain.PhoneDetails"></mapping>
+		<mapping class="com.himanshu.telephonedir.hibernate5.domain.Person"></mapping>
+		<mapping class="com.himanshu.telephonedir.hibernate5.domain.PhoneDetails"></mapping>
 
 	</session-factory>
 </hibernate-configuration>
