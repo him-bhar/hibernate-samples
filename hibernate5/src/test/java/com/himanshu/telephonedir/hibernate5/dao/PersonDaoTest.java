@@ -1,7 +1,6 @@
 package com.himanshu.telephonedir.hibernate5.dao;
 
 import com.himanshu.telephonedir.hibernate5.domain.Person;
-import com.himanshu.telephonedir.hibernate5.domain.PhoneDetails;
 import com.himanshu.telephonedir.hibernate5.factory.SessionFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.hibernate.ScrollMode;
@@ -13,7 +12,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.function.Supplier;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class PersonDaoTest {

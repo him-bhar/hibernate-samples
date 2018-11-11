@@ -8,5 +8,6 @@
 
   <modules>
     <module>hibernate5</module>
+    <module>hibernate-cache-poc</module>
   </modules>
 </project>
